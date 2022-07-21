@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device=width,initial-scale=1.0f">
+<style>
+    .imgMainDiv{
+        display:flex;
+        justify-content:center;
+        margin:30px 0px;
+        
+    }
+.imgDiv{
+    border: 1px dashed black; 
+    width:200px;
+    border-radius:30px;
+    margin-right: 30px;
+    
+}
+.imgDiv img{
+    border-radius:30px 30px 0px 0px ;
+    width:100%;
+    
+}
+.imgDiv  h3{
+    text-align: center;
+}
+.imgDiv p{
+    padding:0px 20px;
+}
+
+.header{
+        display:flex;
+        justify-content:space-between;
+        height:50px;
+        background:pink;
+        align-items: center;
+    }
+
+
+.headerlink{
+        text-decoration: none;
+        color:black;
+        font-size:18px;
+        margin-right:13px;
+    }
+.footer{
+      
+       
+       
+        background:pink;
+        /* burası witdh göre hızalama vey aynı zamanda bu yuzden içindeki herseyi yan yana getirir. */
+        display: flex;
+        justify-content:space-around;
+       /* burası y göre hizalama */
+        align-items: center;
+        font-size:18px;
+
+        /* text-align:center; */
+     
+       
+    }
+    .footer ul{
+        list-style-type: none;
+       text-decoration: none;
+        color:black;
+        margin-bottom:15px;
+    }
+    .footer ul a{
+      
+       text-decoration: none;
+        color:black;
+    
+    }
+    /* bu sadece mobil için gecerli ezme yapıalcak. */
+     @media only screen and (max-width:600px){
+   
+      .imgMainDiv{
+      flex-direction: column;
+    } 
+
+    .imgDiv{
+   
+    width:100%  !important;
+   margin-bottom: 30px !important;} 
+   
+    } 
+
+     @media only screen and (max-width: 900px) {
+        .imgMainDiv {
+         
+           /* Varsayılan olarak esnek öğeler tek bir satıra sığmaya çalışırlar. Gerektiğinde birden fazla satıra yaymak için bu özelliği kullanabilirsiniz. */
+           flex-wrap: wrap;
+           
+        }
+        .imgDiv {
+            width:45%;
+            margin-bottom: 15px; 
+          
+        } 
+      }
+ .efso{
+    width:100%;
+ }
+
+
+</style>
+</head>
+
+<body>
+    <div class="header">
+        <div>
+            <img src="burgerlogo.png" height=50px>
+        </div>
+        <div>
+            <a class="headerlink" href="">Home</a>
+            <a class="headerlink"  href="">About</a>
+            <a class="headerlink"  href="">Contact</a>
+
+        </div>
+    </div>
+    <!-- kapsayıcı div in (mansetin için yazı) içine ben yazıyı nasıl yazcam. -->
+   
+   <div  style="background-image:url('banner.jpg');height:400px;position:relative">
+    <div style="position:absolute;top:38px;left:0px;right:0px; text-align:center;">
+        <h3">Efsana Banner</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.Laborum dolorem non modi, debitis maiores obcaecati 
+            deserunt sunt beatae possimus, nemo distinctio  tempora cum autem. Quo minus iste eos placeat corrupti!</p>
+        
+    </div>
+    
+   </div>
+
+<div class="imgMainDiv">
+   <div class="imgDiv">
+    <img class="efso" src="burger.jpg" >
+    <h3>Kasap Burger</h3>
+    <p>Bol Malzemeli Burger</p>
+    <!-- display:flex esneklik saglarız.normalde:rowdur(yan yana getirir)ama column yaparız.cunku bu column ortalamak isteriz.bunu ortalamak içinde 
+    justify-content ile olusturdugumuz flex yapısını hızalarız.justify x göre hızalama yapar  align-items y göre hızalar. 
+buda olurdu text-align:center-->
+    <div style="display:flex;flex-direction:column;align-items:center">
+    <p  style="color:red;font-size:28px ;">45.99<span style="font-style:italic"> TL </span></p>
+    <button style="color:white;background-color:green;border-radius:30px;width:100px;padding:10px 0px; margin-bottom:30px;">Satın Al</button>
+    </div>
+</div> 
+
+<div class="imgDiv">
+    <img class="efso" src="burger.jpg" >
+    <h3>Kasap Burger</h3>
+    <p>Bol Malzemeli Burger</p>
+    <!-- display:flex esneklik saglarız.normalde:rowdur(yan yana getirir)ama column yaparız.cunku bu column ortalamak isteriz.bunu ortalamak içinde 
+    justify-content ile olusturdugumuz flex yapısını hızalarız.justify x göre hızalama yapar  align-items y göre hızalar. 
+buda olurdu text-align:center-->
+    <div style="display:flex;flex-direction:column;align-items:center">
+    <p  style="color:red;font-size:28px ;">45.99<span style="font-style:italic"> TL </span></p>
+    <button style="color:white;background-color:green;border-radius:30px;width:100px;padding:10px 0px; margin-bottom:30px;">Satın Al</button>
+    </div>
+</div> 
+
+<div class="imgDiv">
+    <img class="efso" src="burger.jpg" >
+    <h3>Kasap Burger</h3>
+    <p>Bol Malzemeli Burger</p>
+    <!-- display:flex esneklik saglarız.normalde:rowdur(yan yana getirir)ama column yaparız.cunku bu column ortalamak isteriz.bunu ortalamak içinde 
+    justify-content ile olusturdugumuz flex yapısını hızalarız.justify x göre hızalama yapar  align-items y göre hızalar. 
+buda olurdu text-align:center-->
+    <div style="display:flex;flex-direction:column;align-items:center">
+    <p  style="color:red;font-size:28px ;">45.99<span style="font-style:italic"> TL </span></p>
+    <button style="color:white;background-color:green;border-radius:30px;width:100px;padding:10px 0px; margin-bottom:30px;">Satın Al</button>
+    </div>
+</div> 
+
+<div class="imgDiv">
+    <img class="efso" src="burger.jpg" >
+    <h3>Kasap Burger</h3>
+    <p>Bol Malzemeli Burger</p>
+    <!-- display:flex esneklik saglarız.normalde:rowdur(yan yana getirir)ama column yaparız.cunku bu column ortalamak isteriz.bunu ortalamak içinde 
+    justify-content ile olusturdugumuz flex yapısını hızalarız.justify x göre hızalama yapar  align-items y göre hızalar. 
+buda olurdu text-align:center-->
+    <div style="display:flex;flex-direction:column;align-items:center">
+    <p  style="color:red;font-size:28px ;">45.99<span style="font-style:italic"> TL </span></p>
+    <button style="color:white;background-color:green;border-radius:30px;width:100px;padding:10px 0px; margin-bottom:30px;">Satın Al</button>
+    </div>
+</div> 
+</div>
+<div class="imgMainDiv">
+    <div class="imgDiv">
+     <img class="efso" src="burger.jpg" >
+     <h3>Kasap Burger</h3>
+     <p>Bol Malzemeli Burger</p>
+     <!-- display:flex esneklik saglarız.normalde:rowdur(yan yana getirir)ama column yaparız.cunku bu column ortalamak isteriz.bunu ortalamak içinde 
+     justify-content ile olusturdugumuz flex yapısını hızalarız.justify x göre hızalama yapar  align-items y göre hızalar. 
+ buda olurdu text-align:center-->
+     <div style="display:flex;flex-direction:column;align-items:center">
+     <p  style="color:red;font-size:28px ;">45.99<span style="font-style:italic"> TL </span></p>
+     <button style="color:white;background-color:green;border-radius:30px;width:100px;padding:10px 0px; margin-bottom:30px;">Satın Al</button>
+     </div>
+ </div> 
+ 
+ <div class="imgDiv">
+     <img class="efso" src="burger.jpg" >
+     <h3>Kasap Burger</h3>
+     <p>Bol Malzemeli Burger</p>
+     <!-- display:flex esneklik saglarız.normalde:rowdur(yan yana getirir)ama column yaparız.cunku bu column ortalamak isteriz.bunu ortalamak içinde 
+     justify-content ile olusturdugumuz flex yapısını hızalarız.justify x göre hızalama yapar  align-items y göre hızalar. 
+ buda olurdu text-align:center-->
+     <div style="display:flex;flex-direction:column;align-items:center">
+     <p  style="color:red;font-size:28px ;">45.99<span style="font-style:italic"> TL </span></p>
+     <button style="color:white;background-color:green;border-radius:30px;width:100px;padding:10px 0px; margin-bottom:30px;">Satın Al</button>
+     </div>
+ </div> 
+ 
+ <div class="imgDiv">
+     <img class="efso" src="burger.jpg" >
+     <h3>Kasap Burger</h3>
+     <p>Bol Malzemeli Burger</p>
+     <!-- display:flex esneklik saglarız.normalde:rowdur(yan yana getirir)ama column yaparız.cunku bu column ortalamak isteriz.bunu ortalamak içinde 
+     justify-content ile olusturdugumuz flex yapısını hızalarız.justify x göre hızalama yapar  align-items y göre hızalar. 
+ buda olurdu text-align:center-->
+     <div style="display:flex;flex-direction:column;align-items:center">
+     <p  style="color:red;font-size:28px ;">45.99<span style="font-style:italic"> TL </span></p>
+     <button style="color:white;background-color:green;border-radius:30px;width:100px;padding:10px 0px; margin-bottom:30px;">Satın Al</button>
+     </div>
+ </div> 
+ 
+ <div class="imgDiv">
+     <img class="efso" src="burger.jpg" >
+     <h3>Kasap Burger</h3>
+     <p>Bol Malzemeli Burger</p>
+     <!-- display:flex esneklik saglarız.normalde:rowdur(yan yana getirir)ama column yaparız.cunku bu column ortalamak isteriz.bunu ortalamak içinde 
+     justify-content ile olusturdugumuz flex yapısını hızalarız.justify x göre hızalama yapar  align-items y göre hızalar. 
+ buda olurdu text-align:center-->
+     <div style="display:flex;flex-direction:column;align-items:center">
+     <p  style="color:red;font-size:28px ;">45.99<span style="font-style:italic"> TL </span></p>
+     <button style="color:white;background-color:green;border-radius:30px;width:100px;padding:10px 0px; margin-bottom:30px;">Satın Al</button>
+     </div>
+ </div> 
+ </div>
+<!-- h3 ile ilgili işlem yapıyorum ama h3 etiketine degil kapsayıcı dive yapıyorum. -->
+<div class="footer" >
+   
+<ul >
+    <li><a href="">Anasayfa</a></li>
+    <li><a href="">Hakkımızda</a></li>
+    <li><a href="">İletişim</a></li>
+</ul>
+<img src="burgerlogo.png" height=70px>
+
+<ul >
+    <li><a href="">Burgerler</a></li>
+    <li><a href="">Restoranlar</a></li>
+    <li><a href="">İletişim</a></li>
+</ul>
+   
+</div> 
+
+</body>
+</html>
