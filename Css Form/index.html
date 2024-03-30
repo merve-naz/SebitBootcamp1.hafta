@@ -1,0 +1,51 @@
+
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device=width,initial-scale=1.0f">
+<style>
+   .formElement {
+        width:100%;
+        padding:10px;
+        margin:8px 0px;
+        border-radius :10px;
+        box-sizing:border-box;
+    }
+   .formSubmit{
+        width:100%;
+        padding:13px;
+        background-color:lightgreen;
+        border-radius: 15px;
+        color:white;
+    }
+    .formElement:focus{
+        background-color:lightgreen;
+    }
+    /* input[type=text]:hover{
+        background-color:red;
+    } */
+    .formGeneral{
+        background-color: lightgray;
+        padding:20px;
+        margin:10px 350px;
+    }
+</style>
+</head>
+
+<body>
+    <form class="formGeneral">
+        <label>Ad</label>
+        <input type="text" class="formElement" name="firstName" placeholer="Adınızı giriniz">
+        <label>Soyad</label>
+        <input type="text" class="formElement" name="lastName" placeholer="Soyadınızı giriniz">
+    <select name="country">
+        <option value="tr"> Türkiye</option>
+        <option value="fr">Fransa</option>
+        <option value="en">İngiltere</option>
+    </select>
+    <input class="formSubmit" type="submit" value="Kaydet"> 
+</form>
+</body>
+</html>
